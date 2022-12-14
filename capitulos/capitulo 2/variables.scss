@@ -10,3 +10,19 @@ $iconeFechar: url("url da imagem");
 $bordaFocus: 1px solid #0096ED;
 $fontePrincipal: "Trebuchet MS", Verdana, Arial, serif;
 
+// Refering Variables 
+
+$corSecundaria: #F2F2F2;
+
+.publicidade {
+    background-color: $corSecundaria;
+}
+
+.artigo {
+    color: $corSecundaria;
+}
+
+// Variables Inside Variables 
+
+$corFocus: #0096ED;
+$bordaFocus: 1px solid $corFocus;
