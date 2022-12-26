@@ -1,0 +1,8 @@
+.obrigatorio {
+  box-shadow: -2px 0px 0px 0px #FF0000;
+}
+.obrigatorio.invalido {
+  border: 1px solid #FF0000;
+}
+
+/*# sourceMappingURL=output.css.map */
