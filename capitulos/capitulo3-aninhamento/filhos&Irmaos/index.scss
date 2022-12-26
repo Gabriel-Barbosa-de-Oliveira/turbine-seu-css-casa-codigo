@@ -1,0 +1,24 @@
+.conteudo {
+    h2 {
+        font-family: "Arial";
+        color: dimgrey;
+
+        // ~ chamado de seletor universal. Vai pegar todos que tiver apos o h2
+        ~p {
+            font-size: 18px;
+            color: #99999999;
+        }
+    }
+}
+
+.col {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background: #00FF00;
+    // + seletor adjacente. Vai pegar apenas o elemento que tiver apos o primeiro elemento
+    &+&{
+        // & + & = col+col
+        margin-left: 20px;
+    }
+}

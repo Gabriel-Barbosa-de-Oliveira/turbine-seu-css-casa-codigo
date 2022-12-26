@@ -1,0 +1,20 @@
+.conteudo h2 {
+  font-family: "Arial";
+  color: dimgrey;
+}
+.conteudo h2 ~ p {
+  font-size: 18px;
+  color: rgba(153, 153, 153, 0.6);
+}
+
+.col {
+  width: 200px;
+  height: 200px;
+  float: left;
+  background: #00FF00;
+}
+.col + .col {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=output.css.map */

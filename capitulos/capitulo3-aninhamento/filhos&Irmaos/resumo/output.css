@@ -1,0 +1,12 @@
+.conteudo {
+  background: black;
+  padding: 20px;
+}
+.conteudo > div {
+  background: beige;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=output.css.map */
