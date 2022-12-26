@@ -1,0 +1,161 @@
+.botaoDestaque, .botaoPadrao {
+  border-radius: 2px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E9EBEE;
+}
+
+.cabecalho {
+  height: 45px;
+  background-color: #3B5998;
+  border-bottom: 1px solid #29487D;
+}
+
+.conteudo {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteudoPrincipal {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.conteudoPrincipal > div {
+  display: flex;
+  margin: 10px;
+}
+
+[class*=box] {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  margin: 0px 10px 10px 0;
+}
+
+.sideBar {
+  width: 200px;
+  border-left: 1px solid #CCC;
+}
+
+.informacoesConta {
+  width: 180px;
+}
+
+.feedNoticias {
+  width: 500px;
+}
+
+.outrasInformacoes {
+  width: 310px;
+}
+
+.boxInicial {
+  height: 150px;
+}
+
+.boxPublicacao {
+  height: 500px;
+}
+
+.boxInfo {
+  height: 370px;
+}
+
+.boxIdiomas {
+  height: 55px;
+}
+
+.infoGerais {
+  font-size: 12px;
+  font-family: helvetica, arial, sans-serif;
+}
+.infoGerais ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.infoGerais ul h4 {
+  margin: 15px 0 0;
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.infoGerais ul li a {
+  width: 170px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  color: #1D2129;
+  color: #1D2129;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.infoGerais ul li a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url(image/defaultIcon.png);
+}
+.infoGerais ul li a:hover {
+  background-color: #DDDFE2;
+}
+
+.botaoPadrao {
+  background: #F6F7F9;
+  border: 1px solid #CED0D4;
+  color: #4B4F56;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  display: inline-block;
+}
+.botaoPadrao:before {
+  content: "";
+  position: absolute;
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+}
+.botaoPadrao span {
+  margin-left: 24px;
+}
+.botaoPadrao:hover {
+  background-color: #E9EBEE;
+}
+
+.botaoDestaque {
+  background: #4267B2;
+  border: 1px solid #4267B2;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+}
+.botaoDestaque:hover {
+  background-color: #365899;
+}
+
+.iconeMundo:before {
+  background-image: url(image/mundo.png);
+}
+
+/*# sourceMappingURL=output.css.map */

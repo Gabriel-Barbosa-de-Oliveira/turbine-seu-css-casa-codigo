@@ -1,0 +1,193 @@
+$corBase: #3B5998;
+$corFontePrincipal: #1D2129;
+$corFonteDestaque:#FFFFFF;
+$corFonteLink: #365899;
+$corFonteSecundaria: #365899;
+$corFundo: #E9EBEE; 
+$corBorda: #CCC;
+$corDivisor: #CCC;
+$corFundoBoxes: #FFFFFF;
+$corHoverPrincipal: #DDDFE2;
+$botaoPadrao: #F6F7F9;
+$botaoPadraoHover: #E9EBEE;
+$botaoPadraoBorda: #CED0D4;
+$botaoPadraoFonte: #4B4F56;
+$botaoDestaque: #4267B2;
+$botaoDestaqueHover: #365899;
+$botaoDestaqueBorda: #4267B2;
+$botaoDestaqueFonte: #FFFFFF;
+$tamanhoFonte: 12px;
+$familiaFonte: helvetica,arial,sans-serif;
+
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin estiloFonte($cor, $tamanho: 12px, $peso: normal, $entrelinha: 22px) {
+    color: $cor;
+    font-size: $tamanho;
+    font-weight: $peso;
+    line-height: $entrelinha;
+}
+
+%botao{
+    border-radius: 2px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $corFundo;
+}
+
+.cabecalho {
+    height: 45px;
+    background-color: $corBase;
+    border-bottom: 1px solid #29487D;
+}
+
+.conteudo {
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudoPrincipal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.conteudoPrincipal>div {
+    display: flex;
+    margin: 10px;
+}
+
+[class*="box"] {
+    background-color: $corFundoBoxes;
+    border-radius: 3px;
+    border: 1px solid $corBorda;
+    margin: 0px 10px 10px 0;
+}
+
+.sideBar {
+    width: 200px;
+    border-left: 1px solid $corBorda;
+}
+
+.informacoesConta {
+    width: 180px;
+}
+
+.feedNoticias {
+    width: 500px;
+}
+
+.outrasInformacoes {
+    width: 310px;
+}
+
+.boxInicial {
+    height: 150px;
+}
+
+.boxPublicacao {
+    height: 500px;
+}
+
+.boxInfo {
+    height: 370px;
+}
+
+.boxIdiomas {
+    height: 55px;
+}
+
+.infoGerais {
+    font-size: $tamanhoFonte;
+    font-family: $familiaFonte;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        h4 {
+            margin: 15px 0 0;
+            @include estiloFonte($cor: #666);
+            text-transform: uppercase;
+        }
+
+        li {
+            a {
+                width: 170px;
+                text-decoration: none;
+                display: inline-block;
+                padding: 5px;
+                border-radius: 3px;
+                color: $corFontePrincipal;
+                @include estiloFonte($cor: $corFontePrincipal, $entrelinha: 16px);
+                @include ellipsis;
+
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url(image/defaultIcon.png);
+                }
+
+                &:hover {
+                    background-color: $corHoverPrincipal;
+                }
+            }
+        }
+    }
+}
+
+.botaoPadrao {
+    @extend %botao;
+    background: $botaoPadrao;
+    border: 1px solid $botaoPadraoBorda;
+    @include estiloFonte($cor: $botaoPadraoFonte, $peso: bold);
+    display: inline-block;
+    &:before{
+        content: "";
+        position: absolute;
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        margin: 4px;
+    }
+
+    span{
+        margin-left: 24px;
+    }
+
+    &:hover{
+        background-color: $botaoPadraoHover;
+    }
+}
+
+.botaoDestaque{
+    @extend %botao;
+    background: $botaoDestaque;
+    border: 1px solid $botaoDestaqueBorda;
+    @include estiloFonte($cor: $botaoDestaqueFonte, $peso: bold);
+
+    &:hover{
+        background-color: $botaoDestaqueHover;
+    }
+}
+
+.iconeMundo:before{
+    background-image: url(image/mundo.png);
+
+}
