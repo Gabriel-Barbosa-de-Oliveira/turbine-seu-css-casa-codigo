@@ -78,9 +78,11 @@ body {
 }
 .infoGerais ul h4 {
   margin: 15px 0 0;
-  font-weight: normal;
-  text-transform: uppercase;
   color: #666;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 .infoGerais ul li a {
   width: 170px;
@@ -89,6 +91,13 @@ body {
   padding: 5px;
   border-radius: 3px;
   color: #1D2119;
+  color: #1D2119;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .infoGerais ul li a:before {
   content: "";

@@ -9,6 +9,19 @@ $tamanhoFonte: 12px;
 $familiaFonte: helvetica, arial, sans-serif;
 $corHoverPrincipal: #DDDFE2;
 
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin estiloFonte($cor, $tamanho: 12px, $peso: normal, $entrelinha: 22px) {
+    color: $cor;
+    font-size: $tamanho;
+    font-weight: $peso;
+    line-height: $entrelinha;
+}
+
 
 body {
     margin: 0;
@@ -90,9 +103,8 @@ body {
 
         h4 {
             margin: 15px 0 0;
-            font-weight: normal;
+            @include estiloFonte($cor: #666);
             text-transform: uppercase;
-            color: #666;
         }
 
         li {
@@ -103,7 +115,10 @@ body {
                 padding: 5px;
                 border-radius: 3px;
                 color: $corFontePrincipal;
-                &:before{
+                @include estiloFonte($cor: $corFontePrincipal, $entrelinha: 16px);
+                @include ellipsis;
+
+                &:before {
                     content: "";
                     display: inline-block;
                     vertical-align: middle;
@@ -112,6 +127,7 @@ body {
                     height: 16px;
                     background-image: url(image/defaultIcon.png);
                 }
+
                 &:hover {
                     background-color: $corHoverPrincipal;
                 }

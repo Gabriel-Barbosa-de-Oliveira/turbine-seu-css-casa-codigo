@@ -1,0 +1,31 @@
+// @mixin nomeMixin{ 
+//     propriedade: valor;
+// }
+
+@mixin fonteBase {
+    letter-spacing: 0.2px;
+    font-family: 'Calibri';
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+//Para incluir 
+
+// seletor {
+//     @include fonteBase;
+//     propriedade: valor;
+// }
+
+//Pode incluir um dentro do outro
+
+@mixin conteudoBase{
+    @include fonteBase;
+    color: #000;
+}
+
+//Mixins podem aceitar parametros de entrada 
+// @mixin nomeMixin($argumento1, $argumento2){
+//     propriedade: $argumento1;
+//     propriedade: valor;
+//     propriedade: $argumento2;
+// }
