@@ -67,4 +67,40 @@ body {
   height: 55px;
 }
 
+.infoGerais {
+  font-size: 12px;
+  font-family: helvetica, arial, sans-serif;
+}
+.infoGerais ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.infoGerais ul h4 {
+  margin: 15px 0 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #666;
+}
+.infoGerais ul li a {
+  width: 170px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  color: #1D2119;
+}
+.infoGerais ul li a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url(image/defaultIcon.png);
+}
+.infoGerais ul li a:hover {
+  background-color: #DDDFE2;
+}
+
 /*# sourceMappingURL=output.css.map */
