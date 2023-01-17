@@ -17,6 +17,22 @@ body {
   line-height: 1;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E9EBEE;
+  font-family: helvetica, arial, sans-serif;
+}
+
+input[type=file] {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
 .botaoDestaque, .botaoPadrao {
   border-radius: 2px;
   height: 24px;
@@ -59,50 +75,18 @@ body {
   background-color: #365899;
 }
 
-.alertaInfo, .alertaSucesso, .alertaWarning, .alertaErro {
-  width: 80%;
-  margin: 20px auto;
-  padding: 20px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  border-left-width: 8px;
-  border-left-style: solid;
-  border-radius: 5px;
+.divisorVertical {
+  border-left: 1px solid #CCC;
+  margin: 0 10px;
 }
 
-.alertaErro {
-  background-color: tomato;
-  color: #FFFFFF;
-  border-left-color: #DC3D21;
+.divisorHorizontal {
+  border-bottom: 1px solid #CCC;
+  margin: 5px 10px;
 }
 
-.alertaWarning {
-  background-color: #EAAF51;
-  color: #6B6D31;
-  border-left-color: #DF8B00;
-}
-
-.alertaSucesso {
-  background-color: #61B832;
-  color: #296829;
-  border-left-color: #55A12C;
-}
-
-.alertaInfo {
-  background-color: #4EA5CD;
-  color: #BEECFC;
-  border-left-color: #3B8EB5;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #E9EBEE;
-}
-
-.cabecalho {
-  height: 45px;
-  background-color: #3B5998;
-  border-bottom: 1px solid #29487D;
+.iconeMundo:before {
+  background-image: url(image/mundo.png);
 }
 
 .conteudo {
@@ -122,49 +106,23 @@ body {
   margin: 10px;
 }
 
-[class*=box] {
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  border: 1px solid #CCC;
-  margin: 0px 10px 10px 0;
-}
-
-.sideBar {
-  width: 200px;
-  border-left: 1px solid #CCC;
-}
-
-.informacoesConta {
-  width: 180px;
+.cabecalho {
+  height: 45px;
+  background-color: #3B5998;
+  border-bottom: 1px solid #29487D;
 }
 
 .feedNoticias {
   width: 500px;
 }
 
-.outrasInformacoes {
-  width: 310px;
-}
-
-.boxInicial {
-  height: 150px;
-}
-
-.boxPublicacao {
-  height: 500px;
-}
-
-.boxInfo {
-  height: 370px;
-}
-
-.boxIdiomas {
-  height: 55px;
+.informacoesConta {
+  width: 180px;
+  margin-right: 10px;
 }
 
 .infoGerais {
   font-size: 12px;
-  font-family: helvetica, arial, sans-serif;
 }
 .infoGerais ul {
   list-style-type: none;
@@ -186,7 +144,6 @@ body {
   padding: 5px;
   border-radius: 3px;
   color: #1D2129;
-  color: #1D2129;
   font-size: 12px;
   font-weight: normal;
   line-height: 16px;
@@ -207,8 +164,93 @@ body {
   background-color: #DDDFE2;
 }
 
-.iconeMundo:before {
-  background-image: url(image/mundo.png);
+.outrasInformacoes {
+  width: 310px;
+}
+
+.sideBar {
+  width: 200px;
+  border-left: 1px solid #CCC;
+}
+
+[class*=box] {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  margin: 0px 10px 10px 0;
+}
+
+.boxInicial header {
+  padding: 10px 0 0 10px;
+  display: flex;
+}
+.boxInicial content {
+  padding: 10px;
+  display: flex;
+}
+.boxInicial content .foto {
+  height: 40px;
+  width: 40px;
+  background: #CCC;
+}
+.boxInicial content textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  margin-left: 10px;
+  width: 100%;
+  padding-top: 5px;
+  color: #CCC;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 15px;
+  font-family: helvetica, arial, sans-serif;
+}
+.boxInicial footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0 10px;
+}
+
+.entradaArquivo {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  padding: 0 5px;
+  color: #365899;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+}
+.entradaArquivo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.entradaArquivo.foto:before {
+  background-image: url(image/photo.png);
+}
+.entradaArquivo.album:before {
+  background-image: url(image/folder.png);
+}
+.entradaArquivo:hover {
+  background-color: #f6f7f9;
+}
+
+.boxPublicacao {
+  height: 500px;
+}
+
+.boxInfo {
+  height: 370px;
+}
+
+.boxIdiomas {
+  height: 55px;
 }
 
 /*# sourceMappingURL=output.css.map */
