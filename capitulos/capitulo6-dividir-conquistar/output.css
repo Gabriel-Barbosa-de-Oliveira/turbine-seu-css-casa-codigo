@@ -1,3 +1,22 @@
+/* 
+   Baseado em
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
 .botaoDestaque, .botaoPadrao {
   border-radius: 2px;
   height: 24px;
@@ -38,6 +57,40 @@
 }
 .botaoDestaque:hover {
   background-color: #365899;
+}
+
+.alertaInfo, .alertaSucesso, .alertaWarning, .alertaErro {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-left-width: 8px;
+  border-left-style: solid;
+  border-radius: 5px;
+}
+
+.alertaErro {
+  background-color: tomato;
+  color: #FFFFFF;
+  border-left-color: #DC3D21;
+}
+
+.alertaWarning {
+  background-color: #EAAF51;
+  color: #6B6D31;
+  border-left-color: #DF8B00;
+}
+
+.alertaSucesso {
+  background-color: #61B832;
+  color: #296829;
+  border-left-color: #55A12C;
+}
+
+.alertaInfo {
+  background-color: #4EA5CD;
+  color: #BEECFC;
+  border-left-color: #3B8EB5;
 }
 
 body {

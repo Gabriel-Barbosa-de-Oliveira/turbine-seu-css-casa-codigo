@@ -1,23 +1,9 @@
+@import "_reset";
 @import "_mixins";
+@import "_mixinsVendorPrefix";
+@import "_paletaCores";
 @import "_botoes";
 @import "_notificacoes";
-
-$corBase: #3B5998;
-$corFontePrincipal: #1D2129;
-$corFonteDestaque:#FFFFFF;
-$corFonteLink: #365899;
-$corFonteSecundaria: #365899;
-$corFundo: #E9EBEE; 
-$corBorda: #CCC;
-$corDivisor: #CCC;
-$corFundoBoxes: #FFFFFF;
-$corHoverPrincipal: #DDDFE2;
-$tamanhoFonte: 12px;
-$familiaFonte: helvetica,arial,sans-serif;
-
-
-
-
 
 
 body {
