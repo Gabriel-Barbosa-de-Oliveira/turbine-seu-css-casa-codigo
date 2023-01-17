@@ -1,3 +1,7 @@
+@import "_mixins";
+@import "_botoes";
+@import "_notificacoes";
+
 $corBase: #3B5998;
 $corFontePrincipal: #1D2129;
 $corFonteDestaque:#FFFFFF;
@@ -8,35 +12,12 @@ $corBorda: #CCC;
 $corDivisor: #CCC;
 $corFundoBoxes: #FFFFFF;
 $corHoverPrincipal: #DDDFE2;
-$botaoPadrao: #F6F7F9;
-$botaoPadraoHover: #E9EBEE;
-$botaoPadraoBorda: #CED0D4;
-$botaoPadraoFonte: #4B4F56;
-$botaoDestaque: #4267B2;
-$botaoDestaqueHover: #365899;
-$botaoDestaqueBorda: #4267B2;
-$botaoDestaqueFonte: #FFFFFF;
 $tamanhoFonte: 12px;
 $familiaFonte: helvetica,arial,sans-serif;
 
-@mixin ellipsis {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
 
-@mixin estiloFonte($cor, $tamanho: 12px, $peso: normal, $entrelinha: 22px) {
-    color: $cor;
-    font-size: $tamanho;
-    font-weight: $peso;
-    line-height: $entrelinha;
-}
 
-%botao{
-    border-radius: 2px;
-    height: 24px;
-    margin-right: 10px;
-}
+
 
 
 body {
@@ -152,40 +133,7 @@ body {
     }
 }
 
-.botaoPadrao {
-    @extend %botao;
-    background: $botaoPadrao;
-    border: 1px solid $botaoPadraoBorda;
-    @include estiloFonte($cor: $botaoPadraoFonte, $peso: bold);
-    display: inline-block;
-    &:before{
-        content: "";
-        position: absolute;
-        margin-right: 5px;
-        width: 12px;
-        height: 12px;
-        margin: 4px;
-    }
 
-    span{
-        margin-left: 24px;
-    }
-
-    &:hover{
-        background-color: $botaoPadraoHover;
-    }
-}
-
-.botaoDestaque{
-    @extend %botao;
-    background: $botaoDestaque;
-    border: 1px solid $botaoDestaqueBorda;
-    @include estiloFonte($cor: $botaoDestaqueFonte, $peso: bold);
-
-    &:hover{
-        background-color: $botaoDestaqueHover;
-    }
-}
 
 .iconeMundo:before{
     background-image: url(image/mundo.png);

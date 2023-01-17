@@ -4,6 +4,42 @@
   margin-right: 10px;
 }
 
+.botaoPadrao {
+  background: #F6F7F9;
+  border: 1px solid #CED0D4;
+  color: #4B4F56;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  display: inline-block;
+}
+.botaoPadrao:before {
+  content: "";
+  position: absolute;
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+}
+.botaoPadrao span {
+  margin-left: 24px;
+}
+.botaoPadrao:hover {
+  background-color: #E9EBEE;
+}
+
+.botaoDestaque {
+  background: #4267B2;
+  border: 1px solid #4267B2;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+}
+.botaoDestaque:hover {
+  background-color: #365899;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -116,42 +152,6 @@ body {
 }
 .infoGerais ul li a:hover {
   background-color: #DDDFE2;
-}
-
-.botaoPadrao {
-  background: #F6F7F9;
-  border: 1px solid #CED0D4;
-  color: #4B4F56;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 22px;
-  display: inline-block;
-}
-.botaoPadrao:before {
-  content: "";
-  position: absolute;
-  margin-right: 5px;
-  width: 12px;
-  height: 12px;
-  margin: 4px;
-}
-.botaoPadrao span {
-  margin-left: 24px;
-}
-.botaoPadrao:hover {
-  background-color: #E9EBEE;
-}
-
-.botaoDestaque {
-  background: #4267B2;
-  border: 1px solid #4267B2;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 22px;
-}
-.botaoDestaque:hover {
-  background-color: #365899;
 }
 
 .iconeMundo:before {

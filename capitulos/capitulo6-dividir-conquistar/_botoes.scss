@@ -1,0 +1,52 @@
+
+
+$botaoPadrao: #F6F7F9;
+$botaoPadraoHover: #E9EBEE;
+$botaoPadraoBorda: #CED0D4;
+$botaoPadraoFonte: #4B4F56;
+$botaoDestaque: #4267B2;
+$botaoDestaqueHover: #365899;
+$botaoDestaqueBorda: #4267B2;
+$botaoDestaqueFonte: #FFFFFF;
+
+%botao{
+    border-radius: 2px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.botaoPadrao {
+    @extend %botao;
+    background: $botaoPadrao;
+    border: 1px solid $botaoPadraoBorda;
+    @include estiloFonte($cor: $botaoPadraoFonte, $peso: bold);
+    display: inline-block;
+    &:before{
+        content: "";
+        position: absolute;
+        margin-right: 5px;
+        width: 12px;
+        height: 12px;
+        margin: 4px;
+    }
+
+    span{
+        margin-left: 24px;
+    }
+
+    &:hover{
+        background-color: $botaoPadraoHover;
+    }
+}
+
+.botaoDestaque{
+    @extend %botao;
+    background: $botaoDestaque;
+    border: 1px solid $botaoDestaqueBorda;
+    @include estiloFonte($cor: $botaoDestaqueFonte, $peso: bold);
+
+    &:hover{
+        background-color: $botaoDestaqueHover;
+    }
+}
+
